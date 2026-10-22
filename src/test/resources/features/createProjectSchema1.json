@@ -1,0 +1,43 @@
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "Id",
+    "Content"
+  ],
+  "properties": {
+    "Id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "Content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "Items": {
+      "type": ["integer", "null"]
+    },
+    "ItemType": {
+      "type": ["integer", "null"]
+    },
+    "ParentId": {
+      "type": ["integer", "null"]
+    },
+    "Collapsed": {
+      "type": ["boolean", "null"]
+    },
+    "IsProjectShared": {
+      "type": ["boolean", "null"]
+    },
+    "ProjectUserId": {
+      "type": ["integer", "null"]
+    },
+    "IsShareApproved": {
+      "type": ["boolean", "null"]
+    },
+    "IsOwnProject": {
+      "type": ["boolean", "null"]
+    }
+  }
+}
